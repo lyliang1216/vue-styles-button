@@ -2,6 +2,7 @@
   "name": "vue-styles-button",
   "private": false,
   "version": "0.1.0",
+  "description": "vue3各种样式的按钮组件",
   "type": "module",
   "main": "./dist/bundle.js",
   "module": "./dist/bundle.js",
