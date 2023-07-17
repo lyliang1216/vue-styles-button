@@ -38,17 +38,27 @@ const gradientTextClass = computed(() =>
       gradientTextClass
     "
   >
-    <span class="v-button-span">
-      <slot></slot>
-    </span>
+    <button>
+      <span class="v-button-span">
+        <slot></slot>
+      </span>
+    </button>
   </div>
 </template>
 
 <style scoped lang="scss">
+button {
+  background: transparent;
+  color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  width: 100%;
+  height: 100%;
+}
 .v-button {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
   width: 120px;
   height: 40px;
   border: 1.5px solid #939393;
@@ -60,6 +70,7 @@ const gradientTextClass = computed(() =>
     font-style: normal;
     font-weight: 500;
     color: #262626;
+    line-height: 100%;
   }
   &.v-rounded {
     border-radius: 100px;
